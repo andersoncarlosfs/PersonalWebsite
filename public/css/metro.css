@@ -9,13 +9,19 @@ and open the template in the editor.
     Author     : lsdfusion
 */
 
+/* Reset */
+body {
+    margin: 0;
+}
+
 /* https://www.w3schools.com/css/css3_shadows.asp */
 
 /* Navigation bar */
 /* https://www.w3schools.com/css/css_navbar.asp */
+/* https://www.w3schools.com/css/css_navbar.asp */
 /* Dropdown navigation bar */
 /* https://www.w3schools.com/css/css_dropdowns.asp */
-ul {
+ul.topnavigator {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -23,40 +29,44 @@ ul {
     background-color: #333;
 }
 
-li {
+ul.topnavigator li {
     float: left;
 }
 
-li a, .dropdown-button {
-    display: inline-block;
+ul.topnavigator li a, .dropdown-button {
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover:not(.active), .dropdown:hover:not(.active)  {    
+ul.topnavigator li a:hover:not(.active), .dropdown:hover:not(.active)  {    
     /* box-shadow: 0 0 10px 0 #4caf50, 0 0 10px 0 #4caf50; */
 }
 
-li a:hover:not(.active) {
+ul.topnavigator li a:hover:not(.active) {
     background-color: #111;
 }
 
-li.dropdown {
-    display: inline-block;
+ul.topnavigator li.dropdown {
+    display: block;
     position: inherit;
 }
 
-div.dropdown-content a:hover {
+ul.topnavigator div.dropdown-content a:hover {
     background-color: #f1f1f1
 }
 
-.active {
+ul.topnavigator li a.active {
     background-color: #4caf50;
 }
 
-.dropdown-content {
+ul.topnavigator li.right {
+    float: right;
+}
+
+ul.topnavigator .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
@@ -64,10 +74,10 @@ div.dropdown-content a:hover {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin: 0 8px 0 0;
+    margin: 0 0px 0 0;
 }
 
-.dropdown-content a {
+ul.topnavigator .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -75,9 +85,15 @@ div.dropdown-content a:hover {
     text-align: left;
 }
 
-.dropdown:hover .dropdown-content {
+ul.topnavigator .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* */
+@media screen and (max-width: 600px){
+    ul.topnavigator li.right, ul.topnavigator li {
+        float: none;
+    }
+}
+
+/* Content*/
 /* */
