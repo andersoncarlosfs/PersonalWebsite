@@ -103,8 +103,22 @@ ul.topnavigator .dropdown:hover .dropdown-content {
     }
 }
 
-/* Content*/
+/*Content*/
 
+
+/*Footer*/
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    overflow: hidden;    
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
 
 .row::after {
     content: "";
