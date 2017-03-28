@@ -19,6 +19,12 @@ html {
     font-family: "Lucida Sans", sans-serif;
 }
 
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
 /*https://www.w3schools.com/css/css3_shadows.asp*/
 
 /*Navigation bar*/
