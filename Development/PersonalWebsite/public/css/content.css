@@ -11,6 +11,7 @@ and open the template in the editor.
 /*Reset*/
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -19,6 +20,13 @@ html {
 }
 
 /*Content*/
+
+/*Body*/
+/*https://www.w3schools.com/howto/howto_css_profile_card.asp*/
+.title {
+    color: grey;
+    font-size: 18px;
+}
 
 /*Footer*/
 .footer {
@@ -59,12 +67,27 @@ html {
 [class*="column-"] img {
     display: block;
     margin: auto;
-    max-width: 300px;
-    max-height: 400px;
+    max-width: 264px;
+    max-height: 198px;
+    width: 100%;
 }
 
 /*https://www.w3schools.com/css/css_rwd_grid.asp*/
 @media only screen and (max-width: 600px) {
+
+    .left-center {
+        float: none;  
+        text-align: center;
+    }
+
+    .right-center {
+        float: none;
+    }
+    
+    [class*="column-"] .container {
+        transform: translate(0, 0);
+    }
+
     .column-medium-1 {
         width: 8.33%;
     }
@@ -104,6 +127,19 @@ html {
 }
 
 @media only screen and (min-width: 601px) {
+
+    .left-center {
+        float: left;
+    }
+
+    .right-center {
+        float: right;
+    }
+
+    [class*="column-"] .container {
+        transform: translate(0, 50%);
+    }
+
     .column-large-1 {
         width: 8.33%;
     }
