@@ -19,9 +19,14 @@ ul.top-menu {
     list-style-type: none;
     overflow: hidden;
     background-color: #333;
+    position: fixed;
+    top: 0;
+    min-height: 36px;
+    width: 100%;
 }
 
 ul.top-menu li {
+    min-width: 160px;
     float: left;
 }
 
@@ -35,11 +40,6 @@ ul.top-menu li a, .dropdown-button {
 
 ul.top-menu li a:hover:not(.active) {
     background-color: #111;
-}
-
-ul.top-menu li.dropdown {
-    display: block;
-    position: inherit;
 }
 
 ul.top-menu div.dropdown-content a:hover:not(.active) {
@@ -56,8 +56,7 @@ ul.top-menu li.right {
 
 ul.top-menu .dropdown-content {
     display: none;
-    position: absolute;
-    right: 0;
+    position: fixed;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -81,6 +80,13 @@ ul.top-menu .dropdown:hover .dropdown-content {
     
     ul.top-menu li.right, ul.top-menu li {
         float: none;
+    }
+    
+     ul.top-menu .dropdown-content {
+        left: 0;
+        right: 0;
+        top: auto;
+        text-align: center;
     }
     
 }

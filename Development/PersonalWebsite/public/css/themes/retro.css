@@ -30,11 +30,6 @@ ul.side-menu li a, .dropdown-button {
     text-decoration: none;
 }
 
-ul.side-menu li.dropdown-button {
-    position: absolute;
-    min-width: 160px;
-}
-
 ul.side-menu li a:hover:not(.active) {
     background-color: #555;
     color: white;
