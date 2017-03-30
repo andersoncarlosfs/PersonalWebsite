@@ -92,4 +92,11 @@ ul.side-menu .dropdown:hover .dropdown-content {
         text-align: center;
     }
     
+    ul.side-menu .dropdown-content {
+        left: 0;
+        right: 0;
+        top: auto;
+        text-align: center;
+    }
+    
 }
