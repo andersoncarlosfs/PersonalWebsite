@@ -76,7 +76,7 @@ ul.top-menu .dropdown:hover .dropdown-content {
     display: block;
 }
 
-@media screen and (max-width: 639px){
+@media screen and (max-width: 639px) {
 
     ul.top-menu {
         position: static;

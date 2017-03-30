@@ -22,12 +22,10 @@ html {
 /*Body*/
 /*https://www.w3schools.com/howto/howto_css_profile_card.asp*/
 .body {
-    position: static;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 600px;
     max-height: 100%;
     margin-left: auto;
-    margin-top: 36px;
     margin-right: auto;
     margin-bottom: 36px;
     font-family: arial;
@@ -81,6 +79,12 @@ html {
 
 /*https://www.w3schools.com/css/css_rwd_grid.asp*/
 @media only screen and (max-width: 639px) {
+
+    .body {
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .left-center {
         float: none;  
@@ -147,9 +151,9 @@ html {
 @media only screen and (min-width: 640px) {
 
     .body {
-        margin-top: 0;
+        margin-top: 36px;
     }
-    
+
     .left-center {
         float: left;
     }
