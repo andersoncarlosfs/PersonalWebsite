@@ -51,7 +51,7 @@ html {
     text-align: center;
     font-size: 12px;
     padding: 8px 16px;
-    min-width: 36px; 
+    min-height: 36px; 
 }
 
 .right {
@@ -146,6 +146,10 @@ html {
 
 @media only screen and (min-width: 640px) {
 
+    .body {
+        margin-top: 0;
+    }
+    
     .left-center {
         float: left;
     }
