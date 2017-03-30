@@ -6,7 +6,7 @@
 
 $(document).ready(function(){
     
-    $(".menu li a:not(.passive)").click(function(){
+    $(".menu li:not(.submenu-themes) a:not(.passive)").click(function(){
         
         $(".menu li a").removeClass("active");
         
@@ -16,6 +16,16 @@ $(document).ready(function(){
         
         $($(this).attr("href")).show();
         
+    });
+    
+    $(".submenu-themes) a:not(.passive)").click(function(){
+        
+        $(".submenu-themes a").removeClass("active");
+        
+        $(this).addClass("active");
+        
+        $("#theme").attr("href", $(this).attr("href"));                             
+                    
     });
     
 });

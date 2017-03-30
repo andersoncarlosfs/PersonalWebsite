@@ -29,7 +29,7 @@ ul.top-menu li a, .dropdown-button {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 8px 16px;
     text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ ul.top-menu li.dropdown {
     position: inherit;
 }
 
-ul.top-menu div.dropdown-content a:hover {
+ul.top-menu div.dropdown-content a:hover:not(.active) {
     background-color: #f1f1f1
 }
 
