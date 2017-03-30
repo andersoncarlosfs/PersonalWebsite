@@ -23,6 +23,18 @@ html {
 
 /*Body*/
 /*https://www.w3schools.com/howto/howto_css_profile_card.asp*/
+.body {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    max-height: 100%;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    font-family: arial;
+    overflow: visible;  
+}
+
 .title {
     color: grey;
     font-size: 18px;
@@ -46,10 +58,6 @@ html {
     float: right;
 }
 
-.row {
-    padding-top: 15px;
-}
-
 .row::after {
     content: "";
     clear: both;
@@ -58,10 +66,7 @@ html {
 
 [class*="column-"] {
     float: left;
-    padding-top: 0;
-    padding-left: 15px;
-    padding-bottom: 0;
-    padding-right: 15px;
+    padding: 15px;
 }
 
 [class*="column-"] img {
@@ -83,7 +88,7 @@ html {
     .right-center {
         float: none;
     }
-    
+
     [class*="column-"] .container {
         transform: translate(0, 0);
     }
