@@ -13,22 +13,19 @@ and open the template in the editor.
 
 /*Navigation bar*/
 /*https://www.w3schools.com/css/css_navbar.asp*/
-/*https://www.w3schools.com/css/css_navbar.asp*/
 /*Dropdown navigation bar */
 /*https://www.w3schools.com/css/css_dropdowns.asp*/
-ul.topnavigator {
+ul.top-menu {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: #333;
 }
 
-ul.topnavigator li {
+ul.top-menu li {
     float: left;
 }
 
-ul.topnavigator li a, .dropdown-button {
+ul.top-menu li a, .dropdown-button {
     display: block;
     color: white;
     text-align: center;
@@ -36,32 +33,28 @@ ul.topnavigator li a, .dropdown-button {
     text-decoration: none;
 }
 
-ul.topnavigator li a:hover:not(.active), .dropdown:hover:not(.active)  {    
-    /*box-shadow: 0 0 10px 0 #4caf50, 0 0 10px 0 #4caf50;*/
-}
-
-ul.topnavigator li a:hover:not(.active) {
+ul.top-menu li a:hover:not(.active) {
     background-color: #111;
 }
 
-ul.topnavigator li.dropdown {
+ul.top-menu li.dropdown {
     display: block;
     position: inherit;
 }
 
-ul.topnavigator div.dropdown-content a:hover {
+ul.top-menu div.dropdown-content a:hover {
     background-color: #f1f1f1
 }
 
-ul.topnavigator li a.active {
+ul.top-menu li a.active {
     background-color: #4caf50;
 }
 
-ul.topnavigator li.right {
+ul.top-menu li.right {
     float: right;
 }
 
-ul.topnavigator .dropdown-content {
+ul.top-menu .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
@@ -72,7 +65,7 @@ ul.topnavigator .dropdown-content {
     margin: 0 0px 0 0;
 }
 
-ul.topnavigator .dropdown-content a {
+ul.top-menu .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -80,12 +73,14 @@ ul.topnavigator .dropdown-content a {
     text-align: left;
 }
 
-ul.topnavigator .dropdown:hover .dropdown-content {
+ul.top-menu .dropdown:hover .dropdown-content {
     display: block;
 }
 
 @media screen and (max-width: 600px){
-    ul.topnavigator li.right, ul.topnavigator li {
+    
+    ul.top-menu li.right, ul.top-menu li {
         float: none;
     }
+    
 }

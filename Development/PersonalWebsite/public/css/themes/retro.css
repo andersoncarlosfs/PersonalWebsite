@@ -12,21 +12,17 @@ and open the template in the editor.
 
 /*Navigation bar*/
 /*https://www.w3schools.com/css/css_navbar.asp*/
-/*https://www.w3schools.com/css/css_navbar.asp*/
 /*Dropdown navigation bar */
 /*https://www.w3schools.com/css/css_dropdowns.asp*/
-ul.sidenavigator {
+ul.side-menu {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     min-width: 160px;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
-    overflow: auto;
 }
 
-ul.sidenavigator li a, .dropdown-button {
+ul.side-menu li a, .dropdown-button {
     display: block;
     color: #000;
     text-align: left;
@@ -34,30 +30,35 @@ ul.sidenavigator li a, .dropdown-button {
     text-decoration: none;
 }
 
-ul.sidenavigator li a:hover:not(.active), .dropdown:hover:not(.active)  {    
-    /*box-shadow: 0 0 10px 0 #4caf50, 0 0 10px 0 #4caf50;*/
+ul.side-menu li.dropdown-button {
+    position: absolute;
+    min-width: 160px;
 }
 
-ul.sidenavigator li a:hover:not(.active) {
+ul.side-menu li a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
 
-ul.sidenavigator li.dropdown {
+ul.side-menu li.dropdown {
     display: block;
     position: relative;
 }
 
-ul.sidenavigator div.dropdown-content a:hover {
+ul.side-menu li.dropdown.right {
+    float: none;
+}
+
+ul.side-menu div.dropdown-content a:hover {
     background-color: #f1f1f1
 }
 
-ul.sidenavigator li a.active {
+ul.side-menu li a.active {
     background-color: #4caf50;
     color: white;
 }
 
-ul.sidenavigator .dropdown-content {
+ul.side-menu .dropdown-content {
     display: none;
     position: absolute;
     top: 0;
@@ -69,7 +70,7 @@ ul.sidenavigator .dropdown-content {
     margin: 0 0px 0 0;
 }
 
-ul.sidenavigator .dropdown-content a {
+ul.side-menu .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -77,13 +78,18 @@ ul.sidenavigator .dropdown-content a {
     text-align: left;
 }
 
-ul.sidenavigator .dropdown:hover .dropdown-content {
+ul.side-menu .dropdown:hover .dropdown-content {
     display: block;
 }
 
 @media screen and (max-width: 600px){
-    ul.sidenavigator li.right, ul.sidenavigator li {
-        text-align: center;
-        float: none;
+    
+    ul.side-menu {
+        position: static;
     }
+    
+    ul.side-menu li a {
+        text-align: center;
+    }
+    
 }
