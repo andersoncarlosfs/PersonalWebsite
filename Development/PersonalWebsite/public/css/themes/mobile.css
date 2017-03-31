@@ -8,6 +8,10 @@ and open the template in the editor.
     Author     : lsdfusion
 */
 
+.header .content .open-button {     
+    display: block;
+}
+
 /*Full screen overlay menu*/
 /*https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
 .overlay {
