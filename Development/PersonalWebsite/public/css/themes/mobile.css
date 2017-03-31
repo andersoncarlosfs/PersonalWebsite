@@ -8,30 +8,6 @@ and open the template in the editor.
     Author     : lsdfusion
 */
 
-.header .content {
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    max-height: 36px;
-    width: 100%;
-}
-
-.header .content p, .header .content .open-button {
-    color: white;
-    text-align: center;
-}
-
-.header .content .open-button {        
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-.header .content .open-button:hover {    
-    background-color: #f1f1f1;
-    color: #333;
-}
-
 /*Full screen overlay menu*/
 /*https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
 .overlay {

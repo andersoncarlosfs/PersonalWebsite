@@ -20,6 +20,24 @@ html {
 }
 
 /*Header*/
+.header .content {
+    height: 36px;
+    width: 100%;
+    position: fixed;
+    top: 0;    
+}
+
+.header .content p, .header .content .open-button {
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.header .content .open-button {        
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
 .menu-items {
     list-style-type: none;
     overflow: hidden;
