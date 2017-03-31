@@ -40,6 +40,8 @@ html {
 }
 
 .menu-items {
+    position: fixed;
+    top: 0;
     list-style-type: none;
     overflow: hidden;
 }
