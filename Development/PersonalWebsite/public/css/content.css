@@ -27,7 +27,8 @@ html {
     top: 0;    
 }
 
-.header .content p, .header .content .open-button {
+.header .content p, 
+.header .content .open-button {
     padding: 8px 16px;
     text-align: center;
 }
@@ -123,7 +124,7 @@ html {
 @media only screen and (max-width: 639px) {
 
     .body {
-        margin-top: 0px;
+        margin-top: 36px;
     }
 
     .left-center {
@@ -191,7 +192,7 @@ html {
 @media only screen and (min-width: 640px) {
 
     .body {
-        margin-top: 36px;
+        margin-top: 72px;
     }
 
     .left-center {

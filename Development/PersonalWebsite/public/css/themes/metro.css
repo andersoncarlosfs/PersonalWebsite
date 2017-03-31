@@ -15,12 +15,17 @@ and open the template in the editor.
 /*https://www.w3schools.com/css/css_navbar.asp*/
 /*Dropdown navigation bar */
 /*https://www.w3schools.com/css/css_dropdowns.asp*/
+
+.header .content, 
+.menu-items {
+    background-color: #333;
+}
+
 .menu-items {
     max-height: 36px;
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: #333;
 }
 
 .menu-items li {
@@ -28,11 +33,13 @@ and open the template in the editor.
     float: left;
 }
 
+.header .content, 
 .menu-items a {
     color: white;
     text-align: center;
 }
 
+.header .content .open-button:hover,
 .menu-items a:hover:not(.active), 
 .menu-items a.hover {
     background-color: #f1f1f1;
