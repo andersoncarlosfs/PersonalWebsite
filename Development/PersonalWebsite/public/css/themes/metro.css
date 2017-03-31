@@ -61,7 +61,6 @@ ul.top-menu .dropdown-content {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin: 0 0px 0 0;
 }
 
 ul.top-menu .dropdown-content a {
@@ -85,15 +84,15 @@ ul.top-menu .dropdown:hover .dropdown-content {
     ul.top-menu li.right, ul.top-menu li {
         float: none;
     }
-    
+
     ul.top-menu .dropdown-content {
         position: absolute;
     }
 
     ul.top-menu .dropdown-content {
+        top: auto;
         left: 0;
         right: 0;
-        top: auto;
         text-align: center;
     }
 

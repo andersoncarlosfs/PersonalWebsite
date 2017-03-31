@@ -19,7 +19,7 @@ ul.side-menu {
     min-width: 160px;
     background-color: #f1f1f1;
     position: fixed;
-    height: 100%;
+    min-height: 100%;
 }
 
 ul.side-menu li a, .dropdown-button {
@@ -40,7 +40,7 @@ ul.side-menu li.dropdown {
     position: relative;
 }
 
-ul.side-menu li.dropdown.right {
+ul.side-menu li.right {
     float: none;
 }
 
@@ -62,7 +62,6 @@ ul.side-menu .dropdown-content {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin: 0 0px 0 0;
 }
 
 ul.side-menu .dropdown-content a {
@@ -77,35 +76,64 @@ ul.side-menu .dropdown:hover .dropdown-content {
     display: block;
 }
 
-@media screen and (max-width: 920px) {
+/**/
+@media screen and (max-width: 919px) {
 
-    /**/
-    .body {
-        margin-left: 160px;
+    /*Navigation bar*/
+    /*https://www.w3schools.com/css/css_navbar.asp*/
+    /*Dropdown navigation bar */
+    /*https://www.w3schools.com/css/css_dropdowns.asp*/
+    ul.side-menu {
+        overflow: hidden;
+        top: 0;
+        min-height: 36px;
+        width: 100%;
+    }
+
+    ul.side-menu li {
+        min-width: 160px;
+        float: left;
+    }
+
+    ul.side-menu li a, .dropdown-button {
+        text-align: center;        
+    }
+
+    ul.side-menu li.right {
+        float: right;
+    }
+
+    ul.side-menu .dropdown-content {
+        position: fixed;
+        min-width: 160px;    
+        top: auto;
+        left: auto;
     }
 
 }
 
 @media screen and (max-width: 639px) {
 
-    /**/
-    .body {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     ul.side-menu {
         position: static;
     }
 
-    ul.side-menu li a {
-        text-align: center;
+    ul.side-menu li.dropdown {
+        position: static;
+    }
+
+    ul.side-menu li.right, ul.side-menu li {
+        float: none;
     }
 
     ul.side-menu .dropdown-content {
+        position: absolute;
+    }
+
+    ul.side-menu .dropdown-content {
+        top: auto;
         left: 0;
         right: 0;
-        top: auto;
         text-align: center;
     }
 
