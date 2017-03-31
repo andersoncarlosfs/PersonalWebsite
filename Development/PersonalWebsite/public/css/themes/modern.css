@@ -15,7 +15,7 @@ and open the template in the editor.
 /*https://www.w3schools.com/css/css_navbar.asp*/
 /*Dropdown navigation bar */
 /*https://www.w3schools.com/css/css_dropdowns.asp*/
-ul.top-menu {
+ul.menu-items {
     list-style-type: none;
     overflow: hidden;
     background-color: #333;
@@ -25,12 +25,12 @@ ul.top-menu {
     width: 100%;
 }
 
-ul.top-menu li {
+ul.menu-items li {
     min-width: 160px;
     float: left;
 }
 
-ul.top-menu a {
+ul.menu-items a {
     display: block;
     color: white;
     text-align: center;
@@ -39,20 +39,21 @@ ul.top-menu a {
     max-height: 36px;
 }
 
-ul.top-menu a:hover:not(.active), ul.top-menu a.hover {
+ul.menu-items a:hover:not(.active), 
+ul.menu-items a.hover {
     background-color: #f1f1f1;
     color: #333;
 }
 
-ul.top-menu li a.active {
+ul.menu-items li a.active {
     background-color: #4caf50;
 }
 
-ul.top-menu li.right {
+ul.menu-items li.right {
     float: right;
 }
 
-ul.top-menu .dropdown-content {
+ul.menu-items .dropdown-content {
     display: none;
     position: fixed;
     background-color: #333;
@@ -61,7 +62,7 @@ ul.top-menu .dropdown-content {
     z-index: 1;
 }
 
-ul.top-menu .dropdown-content a {
+ul.menu-items .dropdown-content a {
     color: white;
     text-decoration: none;
     display: block;
@@ -69,26 +70,26 @@ ul.top-menu .dropdown-content a {
     max-height: 36px;
 }
 
-ul.top-menu .dropdown:hover .dropdown-content {
+ul.menu-items .dropdown:hover .dropdown-content {
     display: block;
 }
 
 @media screen and (max-width: 639px) {
 
-    ul.top-menu {
+    ul.menu-items {
         position: static;
         max-height: none;
     }
 
-    ul.top-menu li.right, ul.top-menu li {
+    ul.menu-items li.right, ul.menu-items li {
         float: none;
     }
 
-    ul.top-menu .dropdown-content {
+    ul.menu-items .dropdown-content {
         position: absolute;
     }
 
-    ul.top-menu .dropdown-content {
+    ul.menu-items .dropdown-content {
         top: auto;
         left: 0;
         right: 0;

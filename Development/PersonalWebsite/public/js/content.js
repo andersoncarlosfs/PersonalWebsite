@@ -18,10 +18,10 @@ $(document).ready(function () {
     
     //Mobile
     //
-    $(".header .content .close-button").click(function (event) {
+    $(".header .menu .close-button").click(function (event) {
         
         event.preventDefault();
-        
+
         $(".header .overlay").height("0");
         
     });

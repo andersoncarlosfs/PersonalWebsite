@@ -60,7 +60,13 @@ and open the template in the editor.
     margin-top: 30px;
 }
 
-.overlay a {
+ul.menu-items {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+ul.menu-items a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -70,11 +76,15 @@ and open the template in the editor.
     max-height: none;
 }
 
-.overlay li a.active {
+ul.menu-items li a.active {
+    background-color: transparent;
     color: #4caf50;
 }
 
-.overlay a:hover:not(.active), .overlay a:focus:not(.active) {
+.overlay a:hover:not(.active),
+.overlay a:focus:not(.active) 
+ul.menu-items a:hover:not(.active), 
+ul.menu-items a:focus:not(.active) {
     color: #f1f1f1;
 }
 
