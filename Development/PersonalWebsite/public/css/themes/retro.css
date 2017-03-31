@@ -104,6 +104,11 @@ and open the template in the editor.
 
 @media screen and (max-width: 639px) {
    
+    .menu-items {
+        max-height: none;
+        height: auto;
+    }
+    
     .menu-items li.dropdown {
         position: static;
     }
@@ -112,10 +117,8 @@ and open the template in the editor.
         float: none;
     }
     
-    .menu-items .dropdown-content {
-        top: auto;
-        left: 0;
-        right: 0;
+    .body {
+        margin-top: 144px; 
     }
 
 }

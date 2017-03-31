@@ -36,6 +36,7 @@ and open the template in the editor.
 }
 
 .menu-items {
+    position: static;
     background-color: transparent;
 }
 
@@ -74,4 +75,8 @@ and open the template in the editor.
 
 .overlay .close-button:hover {
     color: red;
+}
+
+.body {
+    margin-top: 36px;
 }

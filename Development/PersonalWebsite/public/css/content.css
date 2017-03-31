@@ -125,7 +125,7 @@ html {
 
 /*https://www.w3schools.com/css/css_rwd_grid.asp*/
 @media only screen and (max-width: 639px) {
-
+        
     .menu-items .dropdown-content {
         width: 100%;
 
@@ -134,11 +134,7 @@ html {
     .menu-items .dropdown-content a {
         text-align: center;
     }
-
-    .body {
-        margin-top: 36px;
-    }
-
+    
     .left-center {
         float: none;  
         text-align: center;
