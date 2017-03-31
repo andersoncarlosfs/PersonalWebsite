@@ -51,11 +51,6 @@ and open the template in the editor.
     max-height: none;
 }
 
-.menu-items li a.active {
-    background-color: transparent;
-    color: #4caf50;
-}
-
 .menu-items .dropdown-content {
     position: static;
     background-color: rgb(0,0,0);
