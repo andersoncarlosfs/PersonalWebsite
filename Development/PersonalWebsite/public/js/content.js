@@ -6,6 +6,9 @@
 
 $(document).ready(function () {
     
+    //
+    $(".header .overlay").height("0");
+    
     //Mobile
     //
     $(".header .content .open-button").click(function (event) {

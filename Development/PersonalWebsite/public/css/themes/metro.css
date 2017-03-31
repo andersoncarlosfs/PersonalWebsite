@@ -64,23 +64,11 @@ and open the template in the editor.
 @media screen and (max-width: 639px) {
 
     .menu-items {
-        position: static;
         max-height: none;
     }
 
     .menu-items li.right, .menu-items li {
         float: none;
-    }
-
-    .menu-items .dropdown-content {
-        position: absolute;
-    }
-
-    .menu-items .dropdown-content {
-        top: auto;
-        left: 0;
-        right: 0;
-        text-align: center;
     }
 
 }
