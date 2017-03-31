@@ -31,7 +31,7 @@ $(document).ready(function () {
 
         event.preventDefault();
 
-        $(".menu li a").removeClass("active");
+        $(".menu li:not(.submenu-themes) a").removeClass("active");
 
         $(this).addClass("active");
 

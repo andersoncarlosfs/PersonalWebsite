@@ -21,8 +21,8 @@ and open the template in the editor.
 
 .menu-items {
     min-width: 160px;
-    height: 100%;
-    top: 36px;
+    height: 50%;
+    top: 72px;
     overflow: visible;
 }
 
