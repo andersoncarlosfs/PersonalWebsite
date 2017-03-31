@@ -14,7 +14,7 @@ $(document).ready(function () {
 
         $(this).addClass("active");
 
-        $(".content").hide();
+        $(".body .content").hide();
 
         $($(this).attr("href")).show();
 

@@ -8,3 +8,79 @@ and open the template in the editor.
     Author     : lsdfusion
 */
 
+.header .content {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    max-height: 36px;
+    width: 100%;
+}
+
+.header .content p, .header .content .open-button {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    max-height: 36px;
+}
+
+.header .content .open-button {        
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/*Rotate*/
+/*https://www.w3schools.com/cssref/css3_pr_transform.asp*/
+.header .open-button:hover {    
+    color : #4caf50;
+}
+
+/*Full screen overlay menu*/
+/*https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .close-button {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.body {
+    margin-top: 36px;
+}

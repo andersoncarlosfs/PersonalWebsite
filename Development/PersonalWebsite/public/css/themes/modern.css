@@ -41,7 +41,7 @@ ul.top-menu a {
 
 ul.top-menu a:hover:not(.active), ul.top-menu a.hover {
     background-color: #f1f1f1;
-    color : #333;
+    color: #333;
 }
 
 ul.top-menu li a.active {
