@@ -6,7 +6,9 @@
 
 $(document).ready(function () {
 
-    $(".menu li:not(.submenu-themes) a:not(.passive)").click(function () {
+    $(".menu li:not(.submenu-themes) a:not(.passive)").click(function (event) {
+
+        event.preventDefault();
 
         $(".menu li a").removeClass("active");
 
@@ -29,5 +31,14 @@ $(document).ready(function () {
         $("#theme").attr("href", $(this).attr("href"));
 
     });
+
+    $(".dropdown-content a").hover(
+            function () {
+                $(this).closest("a.dropdown-button").addClass("active");
+            },
+            function () {
+                $(this).closest("a.dropdown-button").removeClass("hover");
+            }
+    );
 
 });
