@@ -19,6 +19,18 @@ html {
     font-family: "Lucida Sans", sans-serif;
 }
 
+/*Header*/
+.menu-items {
+    list-style-type: none;
+}
+
+.menu-items a {
+    max-height: 36px;
+    padding: 8px 16px;
+    display: block;
+    text-decoration: none;
+}
+
 /*Body*/
 /*https://www.w3schools.com/howto/howto_css_profile_card.asp*/
 .body {

@@ -9,7 +9,6 @@ and open the template in the editor.
 */
 
 .header .content {
-    overflow: hidden;
     background-color: #333;
     position: fixed;
     top: 0;
@@ -18,12 +17,8 @@ and open the template in the editor.
 }
 
 .header .content p, .header .content .open-button {
-    display: block;
     color: white;
     text-align: center;
-    padding: 8px 16px;
-    text-decoration: none;
-    max-height: 36px;
 }
 
 .header .content .open-button {        
@@ -60,14 +55,14 @@ and open the template in the editor.
     margin-top: 30px;
 }
 
-ul.menu-items {
+.menu-items {
     list-style-type: none;
     overflow: hidden;
     background-color: transparent;
 }
 
 .overlay a,
-ul.menu-items a {
+.menu-items a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -77,19 +72,19 @@ ul.menu-items a {
     max-height: none;
 }
 
-ul.menu-items li a.active {
+.menu-items li a.active {
     background-color: transparent;
     color: #4caf50;
 }
 
 .overlay a:hover:not(.active),
 .overlay a:focus:not(.active) 
-ul.menu-items a:hover:not(.active), 
-ul.menu-items a:focus:not(.active) {
+.menu-items a:hover:not(.active), 
+.menu-items a:focus:not(.active) {
     color: #f1f1f1;
 }
 
-ul.menu-items .dropdown-content {
+.menu-items .dropdown-content {
     display: none;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 1);
@@ -98,7 +93,7 @@ ul.menu-items .dropdown-content {
     z-index: 1;
 }
 
-ul.menu-items .dropdown-content a {
+.menu-items .dropdown-content a {
     color: white;
     text-decoration: none;
     display: block;
@@ -106,7 +101,7 @@ ul.menu-items .dropdown-content a {
     max-height: none;
 }
 
-ul.menu-items .dropdown:hover .dropdown-content {
+.menu-items .dropdown:hover .dropdown-content {
     display: block;
 }
 

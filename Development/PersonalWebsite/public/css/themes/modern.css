@@ -15,8 +15,7 @@ and open the template in the editor.
 /*https://www.w3schools.com/css/css_navbar.asp*/
 /*Dropdown navigation bar */
 /*https://www.w3schools.com/css/css_dropdowns.asp*/
-ul.menu-items {
-    list-style-type: none;
+.menu-items {
     overflow: hidden;
     background-color: #333;
     position: fixed;
@@ -25,35 +24,31 @@ ul.menu-items {
     width: 100%;
 }
 
-ul.menu-items li {
+.menu-items li {
     min-width: 160px;
     float: left;
 }
 
-ul.menu-items a {
-    display: block;
+.menu-items a {
     color: white;
     text-align: center;
-    padding: 8px 16px;
-    text-decoration: none;
-    max-height: 36px;
 }
 
-ul.menu-items a:hover:not(.active), 
-ul.menu-items a.hover {
+.menu-items a:hover:not(.active), 
+.menu-items a.hover {
     background-color: #f1f1f1;
     color: #333;
 }
 
-ul.menu-items li a.active {
+.menu-items li a.active {
     background-color: #4caf50;
 }
 
-ul.menu-items li.right {
+.menu-items li.right {
     float: right;
 }
 
-ul.menu-items .dropdown-content {
+.menu-items .dropdown-content {
     display: none;
     position: fixed;
     background-color: #333;
@@ -62,7 +57,7 @@ ul.menu-items .dropdown-content {
     z-index: 1;
 }
 
-ul.menu-items .dropdown-content a {
+.menu-items .dropdown-content a {
     color: white;
     text-decoration: none;
     display: block;
@@ -70,26 +65,26 @@ ul.menu-items .dropdown-content a {
     max-height: 36px;
 }
 
-ul.menu-items .dropdown:hover .dropdown-content {
+.menu-items .dropdown:hover .dropdown-content {
     display: block;
 }
 
 @media screen and (max-width: 639px) {
 
-    ul.menu-items {
+    .menu-items {
         position: static;
         max-height: none;
     }
 
-    ul.menu-items li.right, ul.menu-items li {
+    .menu-items li.right, .menu-items li {
         float: none;
     }
 
-    ul.menu-items .dropdown-content {
+    .menu-items .dropdown-content {
         position: absolute;
     }
 
-    ul.menu-items .dropdown-content {
+    .menu-items .dropdown-content {
         top: auto;
         left: 0;
         right: 0;

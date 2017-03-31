@@ -14,44 +14,39 @@ and open the template in the editor.
 /*https://www.w3schools.com/css/css_navbar.asp*/
 /*Dropdown navigation bar */
 /*https://www.w3schools.com/css/css_dropdowns.asp*/
-ul.menu-items {
-    list-style-type: none;
+.menu-items {
     min-width: 160px;
     background-color: #f1f1f1;
     position: fixed;
     max-height: 100%;
 }
 
-ul.menu-items a {
-    display: block;
+.menu-items a {
     color: #000;
     text-align: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    max-height: 36px;
 }
 
-ul.menu-items a:hover:not(.active), 
-ul.menu-items a.hover {
+.menu-items a:hover:not(.active), 
+.menu-items a.hover {
     background-color: #555;
     color: white;
 }
 
-ul.menu-items li.dropdown {
+.menu-items li.dropdown {
     display: block;
     position: relative;
 }
 
-ul.menu-items li.right {
+.menu-items li.right {
     float: none;
 }
 
-ul.menu-items li a.active {
+.menu-items li a.active {
     background-color: #4caf50;
     color: white;
 }
 
-ul.menu-items .dropdown-content {
+.menu-items .dropdown-content {
     display: none;
     position: absolute;
     top: 0;
@@ -62,14 +57,14 @@ ul.menu-items .dropdown-content {
     z-index: 1;
 }
 
-ul.menu-items .dropdown-content a {
+.menu-items .dropdown-content a {
     color: black;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-ul.menu-items .dropdown:hover .dropdown-content {
+.menu-items .dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -80,27 +75,27 @@ ul.menu-items .dropdown:hover .dropdown-content {
     /*https://www.w3schools.com/css/css_navbar.asp*/
     /*Dropdown navigation bar */
     /*https://www.w3schools.com/css/css_dropdowns.asp*/
-    ul.menu-items {
+    .menu-items {
         overflow: hidden;
         top: 0;
         max-height: none;
         width: 100%;
     }
 
-    ul.menu-items li {
+    .menu-items li {
         min-width: 160px;
         float: left;
     }
 
-    ul.menu-items li a, .dropdown-button {
+    .menu-items li a, .dropdown-button {
         text-align: center;        
     }
 
-    ul.menu-items li.right {
+    .menu-items li.right {
         float: right;
     }
 
-    ul.menu-items .dropdown-content {
+    .menu-items .dropdown-content {
         position: fixed;
         min-width: 160px;    
         top: auto;
@@ -111,23 +106,23 @@ ul.menu-items .dropdown:hover .dropdown-content {
 
 @media screen and (max-width: 639px) {
 
-    ul.menu-items {
+    .menu-items {
         position: static;
     }
 
-    ul.menu-items li.dropdown {
+    .menu-items li.dropdown {
         position: static;
     }
 
-    ul.menu-items li.right, ul.menu-items li {
+    .menu-items li.right, .menu-items li {
         float: none;
     }
 
-    ul.menu-items .dropdown-content {
+    .menu-items .dropdown-content {
         position: absolute;
     }
 
-    ul.menu-items .dropdown-content {
+    .menu-items .dropdown-content {
         top: auto;
         left: 0;
         right: 0;
