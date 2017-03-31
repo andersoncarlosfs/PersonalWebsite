@@ -32,10 +32,9 @@ and open the template in the editor.
     right: 0;
 }
 
-/*Rotate*/
-/*https://www.w3schools.com/cssref/css3_pr_transform.asp*/
-.header .open-button:hover {    
-    color : #4caf50;
+.header .content .open-button:hover {    
+    background-color: #f1f1f1;
+    color: #333;
 }
 
 /*Full screen overlay menu*/

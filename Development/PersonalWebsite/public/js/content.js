@@ -5,7 +5,28 @@
  */
 
 $(document).ready(function () {
+    
+    //Mobile
+    //
+    $(".header .content .open-button").click(function (event) {
+        
+        event.preventDefault();
+        
+        $(".header .overlay").height("100%");
+        
+    });
+    
+    //Mobile
+    //
+    $(".header .content .close-button").click(function (event) {
+        
+        event.preventDefault();
+        
+        $(".header .overlay").height("0");
+        
+    });
 
+    //
     $(".menu li:not(.submenu-themes) a:not(.passive)").click(function (event) {
 
         event.preventDefault();
@@ -20,6 +41,7 @@ $(document).ready(function () {
 
     });
 
+    //
     $(".submenu-themes a:not(.passive)").click(function (event) {
 
         event.preventDefault();
@@ -31,7 +53,8 @@ $(document).ready(function () {
         $("#theme").attr("href", $(this).attr("href"));
 
     });
-
+    
+    //
     $(".dropdown-content a").hover(
             function () {
                 $(this).closest("li.dropdown").find(".dropdown-button").first().addClass("hover");
