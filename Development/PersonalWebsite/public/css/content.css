@@ -39,11 +39,6 @@ html {
     z-index: 1;
 }    
 
-.menu-items .dropdown-content a {
-    display: block;
-    text-decoration: none;
-}
-
 .menu-items .dropdown:hover .dropdown-content {
     display: block;
 }

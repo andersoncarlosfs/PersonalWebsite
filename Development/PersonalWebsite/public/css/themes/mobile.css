@@ -75,13 +75,6 @@ and open the template in the editor.
     color: #4caf50;
 }
 
-.overlay a:hover:not(.active),
-.overlay a:focus:not(.active) 
-.menu-items a:hover:not(.active), 
-.menu-items a:focus:not(.active) {
-    color: #f1f1f1;
-}
-
 .menu-items .dropdown-content {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 1);
