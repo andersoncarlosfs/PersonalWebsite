@@ -17,7 +17,7 @@ and open the template in the editor.
 /*https://www.w3schools.com/css/css_dropdowns.asp*/
 .header .content, 
 .menu-items {
-    background-color: #333;
+    background-color: #1a2930;
 }
 
 .menu-items {
@@ -39,12 +39,12 @@ and open the template in the editor.
 .header .content .open-button:hover,
 .menu-items a:hover:not(.active), 
 .menu-items a.hover {
-    background-color: #f1f1f1;
+    background-color: #c5c1c0;
     color: #333;
 }
 
 .menu-items li a.active {
-    background-color: #4caf50;
+    background-color: #f7ce3e;
 }
 
 .menu-items li.right {
@@ -53,7 +53,7 @@ and open the template in the editor.
 
 .menu-items .dropdown-content {
     position: fixed;
-    background-color: #333;
+    background-color: #1a2930;
 }
 
 .menu-items .dropdown-content a {
@@ -61,11 +61,12 @@ and open the template in the editor.
 }
 
 .name {
-    background-color: #4caf50;
+    background-color: #1a2930;
+    color: white;
 }
 
 .footer {
-    background-color: #f3f3f3;
+    background-color: #c5c1c0;
 }
 
 @media screen and (max-width: 639px) {
