@@ -78,6 +78,10 @@ html {
     overflow: visible;     
 }
 
+.container {
+    width: 100%;
+}
+
 .title {
     color: grey;
     font-size: 18px;
@@ -125,7 +129,7 @@ html {
 
 /*https://www.w3schools.com/css/css_rwd_grid.asp*/
 @media only screen and (max-width: 639px) {
-        
+
     .menu-items .dropdown-content {
         width: 100%;
 
@@ -134,7 +138,7 @@ html {
     .menu-items .dropdown-content a {
         text-align: center;
     }
-    
+
     .left-center {
         float: none;  
         text-align: center;
