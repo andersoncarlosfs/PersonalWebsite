@@ -16,9 +16,9 @@ and open the template in the editor.
 /*https://www.w3schools.com/css/css_dropdowns.asp*/
 .menu-items {
     min-width: 160px;
-    background-color: #f1f1f1;
-    position: fixed;
     max-height: 100%;
+    position: fixed;
+    background-color: #f1f1f1;          
 }
 
 .menu-items a {
@@ -47,25 +47,16 @@ and open the template in the editor.
 }
 
 .menu-items .dropdown-content {
-    display: none;
     position: absolute;
     top: 0;
     left: 160px;
     background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
 
 .menu-items .dropdown-content a {
     color: black;
-    text-decoration: none;
-    display: block;
     text-align: left;
-}
-
-.menu-items .dropdown:hover .dropdown-content {
-    display: block;
+    max-height: 36px;
 }
 
 /**/
