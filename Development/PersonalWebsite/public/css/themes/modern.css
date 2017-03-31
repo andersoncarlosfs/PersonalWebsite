@@ -1,0 +1,98 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+/* 
+    Created on : 27-Mar-2017, 09:58:42
+    Author     : lsdfusion
+*/
+
+/*https://www.w3schools.com/css/css3_shadows.asp*/
+
+/*Navigation bar*/
+/*https://www.w3schools.com/css/css_navbar.asp*/
+/*Dropdown navigation bar */
+/*https://www.w3schools.com/css/css_dropdowns.asp*/
+ul.top-menu {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    max-height: 36px;
+    width: 100%;
+}
+
+ul.top-menu li {
+    min-width: 160px;
+    float: left;
+}
+
+ul.top-menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    max-height: 36px;
+}
+
+ul.top-menu a:hover:not(.active), ul.top-menu a.hover {
+    background-color: #f1f1f1;
+    color : #333;
+}
+
+ul.top-menu li a.active {
+    background-color: #4caf50;
+}
+
+ul.top-menu li.right {
+    float: right;
+}
+
+ul.top-menu .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+ul.top-menu .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    max-height: 36px;
+}
+
+ul.top-menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 639px) {
+
+    ul.top-menu {
+        position: static;
+        max-height: none;
+    }
+
+    ul.top-menu li.right, ul.top-menu li {
+        float: none;
+    }
+
+    ul.top-menu .dropdown-content {
+        position: absolute;
+    }
+
+    ul.top-menu .dropdown-content {
+        top: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+}
