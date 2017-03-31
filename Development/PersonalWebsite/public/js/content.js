@@ -16,7 +16,6 @@ $(document).ready(function () {
         
     });
     
-    //Mobile
     //
     $(".header .menu .close-button").click(function (event) {
         
@@ -24,6 +23,11 @@ $(document).ready(function () {
 
         $(".header .overlay").height("0");
         
+    });
+    
+    //
+    $(".header .overlay").mouseleave(function () {
+        $(".header .overlay").height("0");
     });
 
     //
