@@ -38,6 +38,8 @@ $(document).ready(function () {
         $(".body .content").hide();
 
         $($(this).attr("href")).show();
+        
+        $(".header .menu .close-button").click();
 
     });
 
@@ -51,6 +53,8 @@ $(document).ready(function () {
         $(this).addClass("active");
 
         $("#theme").attr("href", $(this).attr("href"));
+        
+        $(".header .menu .close-button").click();
 
     });
     
