@@ -60,7 +60,7 @@ $(document).ready(function () {
         $(this).addClass("active");
 
         $("#theme").attr("href", $(this).attr("href"));
-        
+                
         $(".header .menu .close-button").click();
 
     });
