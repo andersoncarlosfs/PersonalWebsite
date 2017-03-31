@@ -34,10 +34,10 @@ $(document).ready(function () {
 
     $(".dropdown-content a").hover(
             function () {
-                $(this).closest("a.dropdown-button").addClass("active");
+                $(this).closest("li.dropdown").find(".dropdown-button").first().addClass("hover");
             },
             function () {
-                $(this).closest("a.dropdown-button").removeClass("hover");
+                $(this).closest("li.dropdown").find(".dropdown-button").first().removeClass("hover");
             }
     );
 

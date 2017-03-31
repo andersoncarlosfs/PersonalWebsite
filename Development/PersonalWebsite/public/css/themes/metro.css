@@ -21,7 +21,7 @@ ul.top-menu {
     background-color: #333;
     position: fixed;
     top: 0;
-    min-height: 36px;
+    max-height: 36px;
     width: 100%;
 }
 
@@ -30,20 +30,18 @@ ul.top-menu li {
     float: left;
 }
 
-ul.top-menu li a, .dropdown-button {
+ul.top-menu a {
     display: block;
     color: white;
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
+    max-height: 36px;
 }
 
-ul.top-menu li a:hover:not(.active) {
-    background-color: #111;
-}
-
-ul.top-menu div.dropdown-content a:hover:not(.active) {
-    background-color: #f1f1f1
+ul.top-menu a:hover:not(.active), ul.top-menu a.hover {
+    background-color: #f1f1f1;
+    color : #333;
 }
 
 ul.top-menu li a.active {
@@ -57,18 +55,19 @@ ul.top-menu li.right {
 ul.top-menu .dropdown-content {
     display: none;
     position: fixed;
-    background-color: #f9f9f9;
+    background-color: #333;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 ul.top-menu .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+    max-height: 36px;
 }
 
 ul.top-menu .dropdown:hover .dropdown-content {
