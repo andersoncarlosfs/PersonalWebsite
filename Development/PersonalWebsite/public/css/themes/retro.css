@@ -19,7 +19,7 @@ ul.side-menu {
     min-width: 160px;
     background-color: #f1f1f1;
     position: fixed;
-    min-height: 100%;
+    max-height: 100%;
 }
 
 ul.side-menu a {
@@ -82,7 +82,7 @@ ul.side-menu .dropdown:hover .dropdown-content {
     ul.side-menu {
         overflow: hidden;
         top: 0;
-        max-height: 36px;
+        max-height: none;
         width: 100%;
     }
 
